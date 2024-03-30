@@ -1,0 +1,32 @@
+/* login.module.css */
+
+.loginContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.firstColumn {
+    flex: 1 1 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 100%;
+    padding: 0px;
+    background-color: rgb(25, 25, 25);
+}
+
+
+.secondColumn {
+    flex: 1 1 10%;
+    background-color: var(--foreground);
+    color: var(--background);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 100%;
+    padding: 80px 0px;
+    border-radius: 15px 0 0 15px;
+}
