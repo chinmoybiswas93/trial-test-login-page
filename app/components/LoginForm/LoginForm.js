@@ -30,7 +30,7 @@ const LoginForm = () => {
       <div className={styles.termsCheck}>
         <input type="checkbox" name="terms" id="terms-check" />
         <label htmlFor="terms-check">
-          I agree to Typeform's{" "}
+          I agree to Typeform&apos;s{" "}
           <a href="/">
             <u>Terms of Service</u>
           </a>
@@ -47,7 +47,9 @@ const LoginForm = () => {
       </div>
       <SelectOptions></SelectOptions>
       <div>
-        <button className={styles.submitButton} type="submit">Create my free account</button>
+        <button className={styles.submitButton} type="submit">
+          Create my free account
+        </button>
       </div>
     </div>
   );
