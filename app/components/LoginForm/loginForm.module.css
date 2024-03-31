@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.container > div {
+  width: 100%;
+  display: block;
+}
+
+.container > div > input {
+  width: 100%;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.container > div > input:hover {
+  width: 100%;
+  border: 1px solid #cbcbcb;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.container div input[type="checkbox"] {
+  transform: scale(1.8);
+  outline: none;
+  border: 1px solid #f2f2f2;
+  width: auto;
+}
+
+.termsCheck {
+  display: flex !important;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 18px;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.termsCheck input {
+  margin: 8px 0 0 8px;
+}
+
+.passwordBox {
+  position: relative;
+}
+
+.passwordIcon svg {
+  fill: #f2f2f2;
+  width: 32px;
+}
+.passwordIcon svg:hover {
+  fill: #cbcbcb;
+  width: 32px;
+  cursor: pointer;
+}
+
+.passwordIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  padding-bottom: 10px;
+  z-index: 1;
+}

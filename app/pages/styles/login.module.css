@@ -1,32 +1,125 @@
 /* login.module.css */
 
 .loginContainer {
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
 }
 
 .firstColumn {
-    flex: 1 1 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 90vh;
-    width: 100%;
-    padding: 0px;
-    background-color: rgb(25, 25, 25);
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  background-color: rgb(25, 25, 25);
+}
+
+.firstColumn > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.firstColumn > div > div {
+  max-width: 366px;
+}
+
+.firstColumn > div > h1 {
+  font-size: 36px;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+
+.secondColumn {
+  flex: 1 1 10%;
+  background-color: var(--foreground);
+  color: var(--background);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px 0 0 15px;
+  text-align: center;
+}
+
+.secondColumn > div:first-child {
+  display: flex;
+  align-items: center;
+  padding: 16px 23px;
+  justify-content: space-between;
+}
+
+.secondColumn > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.loginButton {
+  color: rgb(106 106 106);
+  font-size: 14px;
+}
+
+.loginButton button {
+  font-size: 12px;
+  color: #000;
+  border: 1px solid #000;
+  padding: 3px 13px;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 24px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.logo a div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logo h2 {
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgb(94, 94, 94);
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 100%;
 }
 
 
-.secondColumn {
-    flex: 1 1 10%;
-    background-color: var(--foreground);
-    color: var(--background);
-    position: relative;
+.loginFormContainer {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
-    width: 100%;
-    padding: 80px 0px;
-    border-radius: 15px 0 0 15px;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    margin: auto;
 }
