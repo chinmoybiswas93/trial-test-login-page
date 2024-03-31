@@ -13,7 +13,7 @@
 
 .questionsOpen {
   text-align: left;
-  padding: 2px;
+  padding: 3px;
   max-height: 305px;
   overflow: hidden;
   transition: max-height 200ms ease-in 0s;
