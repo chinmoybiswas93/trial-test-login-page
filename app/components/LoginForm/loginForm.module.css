@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .container > div {
@@ -14,7 +14,7 @@
   width: 100%;
   border: 1px solid #f2f2f2;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   border-radius: 6px;
 }
@@ -23,13 +23,13 @@
   width: 100%;
   border: 1px solid #cbcbcb;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   border-radius: 6px;
 }
 
 .container div input[type="checkbox"] {
-  transform: scale(1.8);
+  transform: scale(1.6);
   outline: none;
   border: 1px solid #f2f2f2;
   width: auto;
@@ -39,7 +39,7 @@
   display: flex !important;
   flex-direction: row;
   gap: 20px;
-  font-size: 18px;
+  font-size: 14px;
   align-items: flex-start;
   text-align: left;
   padding-right: 50px;
@@ -55,7 +55,7 @@
 
 .passwordIcon svg {
   fill: #f2f2f2;
-  width: 32px;
+  width: 20px;
 }
 .passwordIcon svg:hover {
   fill: #cbcbcb;
@@ -70,4 +70,13 @@
   right: 15px;
   padding-bottom: 10px;
   z-index: 1;
+}
+
+.submitButton {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 23px;
+  width: 90%;
+  margin: 10px auto 0;
+  border-radius: 5px;
 }

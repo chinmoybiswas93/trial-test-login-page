@@ -1,7 +1,7 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import styles from "./styles/login.module.css";
-import LanguageSwitcher from "../components/LanguageSwitcher";
+import LanguageSwitcher from "../components/LanguageSwitcher/LanguageSwitcher";
 import LoginForm from "../components/LoginForm/LoginForm";
 
 const LoginPage = () => {
@@ -76,6 +76,8 @@ const LoginPage = () => {
             </h2>
           </div>
           <LoginForm></LoginForm>
+
+          
         </div>
       </section>
     </div>

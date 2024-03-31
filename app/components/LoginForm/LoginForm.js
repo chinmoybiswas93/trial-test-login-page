@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./loginForm.module.css";
+import SelectOptions from "../SelectOptions/SelectOptions";
 
 const LoginForm = () => {
   const [showPass, setShowPass] = useState(false);
@@ -43,6 +44,10 @@ const LoginForm = () => {
           </a>
           .
         </label>
+      </div>
+      <SelectOptions></SelectOptions>
+      <div>
+        <button className={styles.submitButton} type="submit">Create my free account</button>
       </div>
     </div>
   );
