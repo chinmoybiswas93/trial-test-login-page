@@ -50,6 +50,7 @@
   min-height: 90vh;
   height: 100%;
   width: 100%;
+  overflow: auto;
   border-radius: 15px 0 0 15px;
   text-align: center;
 }
@@ -114,16 +115,22 @@
 }
 
 .loginFormContainer {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 550px;
   margin: auto;
+  padding: 54px 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 721px) {
+  .loginFormContainer {
+    max-width: 270px;
+  }
+}
+
+@media (max-width: 1025px) {
   .firstColumn {
     display: none;
   }

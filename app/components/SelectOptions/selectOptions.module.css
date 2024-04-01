@@ -1,5 +1,5 @@
 .container {
-  padding: 10px 20px 10px 40px;
+  padding: 10px 20px 10px 35px;
   margin-top: 20px;
   font-size: 14px;
 }
@@ -53,7 +53,7 @@
 }
 
 .optionsInfo {
-  color: #a1a1a1;
+  color: #7f7f7f;
 }
 
 .iconOpen {
