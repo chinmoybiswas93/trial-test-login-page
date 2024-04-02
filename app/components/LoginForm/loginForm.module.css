@@ -5,21 +5,24 @@
   max-width: 300px;
 }
 
-.container>div {
+.container > div {
   width: 100%;
   display: block;
 }
 
-.container>div>input {
+.container > div > input {
   width: 100%;
   border: 1px solid rgb(194, 194, 193);
   padding: 6px 8px;
   font-size: 16px;
-  margin-bottom: 15px;
   border-radius: 3px;
 }
 
-.container>div>input:hover {
+.emailContainer {
+  margin-bottom: 15px;
+}
+
+.container > div > input:hover {
   border: 1px solid rgb(127, 127, 127);
 }
 
@@ -31,12 +34,12 @@
   padding-left: 30px;
   position: relative;
   text-align: left;
-
 }
 
 .termsCheckbox:focus {
   outline: none;
-  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgba(38, 38, 39, 0.4) 0px 0px 0px 3px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px,
+    rgba(38, 38, 39, 0.4) 0px 0px 0px 3px;
 }
 
 .termsCheckbox {
@@ -60,7 +63,8 @@
 .termsCheckbox:checked::before {
   content: "";
   color: rgb(255, 255, 255);
-  background: url("https://www.typeform.com/static/signup-page/check-white.svg") 50% 4px no-repeat;
+  background: url("https://www.typeform.com/static/signup-page/check-white.svg")
+    50% 4px no-repeat;
   left: 0px;
   top: 0px;
   width: 20px;
@@ -68,10 +72,9 @@
   position: absolute;
 }
 
-
-
 .passwordBox {
   position: relative;
+  margin-bottom: 15px;
 }
 
 .passwordIcon svg {
@@ -80,13 +83,12 @@
 }
 
 .passwordIcon svg:hover {
-  width: 32px;
   cursor: pointer;
 }
 
 .passwordIcon {
   position: absolute;
-  top: 50%;
+  top: 25px;
   transform: translateY(-50%);
   right: 15px;
   padding-bottom: 10px;
@@ -101,4 +103,23 @@
   max-width: 230px;
   margin: 10px auto 0;
   border-radius: 5px;
+}
+
+.errorContainer {
+  position: relative;
+  color: rgb(193, 59, 47);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  padding: 8px 0 6px 20px;
+}
+.errorIcon::before {
+  content: "";
+  background: url("https://www.typeform.com/static/signup-page/warning.svg") 50%
+    center;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
 }
