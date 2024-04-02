@@ -2,12 +2,13 @@
 import { useState } from "react";
 import styles from "./selectOptions.module.css";
 
-const SelectOptions = ({ defaultCheck, setDefaultCheck }) => {
+const SelectOptions = ({ setDefaultCheck }) => {
   const [open, setOpen] = useState(false);
 
   const handleChange = () => {
     setDefaultCheck(true)
   }
+
   return (
     <div className={styles.container}>
       <div className={styles.dropdownBox}>

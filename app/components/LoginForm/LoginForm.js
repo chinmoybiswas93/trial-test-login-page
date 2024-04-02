@@ -64,7 +64,7 @@ const LoginForm = () => {
         </label>
       </div>
 
-      <SelectOptions defaultCheck={defaultCheck} setDefaultCheck={setDefaultCheck}></SelectOptions>
+      <SelectOptions setDefaultCheck={setDefaultCheck}></SelectOptions>
       <div>
         <button className={styles.submitButton} type="submit">
           Create my free account
