@@ -5,12 +5,12 @@
   max-width: 300px;
 }
 
-.container > div {
+.container>div {
   width: 100%;
   display: block;
 }
 
-.container > div > input {
+.container>div>input {
   width: 100%;
   border: 1px solid rgb(194, 194, 193);
   padding: 6px 8px;
@@ -19,20 +19,20 @@
   border-radius: 3px;
 }
 
-.container > div > input:hover {
+.container>div>input:hover {
   border: 1px solid rgb(127, 127, 127);
 }
 
-.container div input[type="checkbox"] {
+/* .container div input[type="checkbox"] {
   appearance: none;
   height: 22px;
   width: 22px;
   outline: none;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-}
+} */
 
-.termsCheck {
+/* .termsCheck {
   display: flex !important;
   flex-direction: row;
   gap: 15px;
@@ -44,7 +44,54 @@
 
 .termsCheck input {
   margin: 3px 0 0 3px;
+} */
+
+.termsCheck label {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  padding-left: 30px;
+  position: relative;
+  text-align: left;
+
 }
+
+.termsCheckbox:focus {
+  outline: none;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 1px, rgba(38, 38, 39, 0.4) 0px 0px 0px 3px;
+}
+
+.termsCheckbox {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  appearance: none;
+  box-shadow: rgb(207, 207, 206) 0px 0px 0px 1px inset;
+  border-radius: 3px;
+  transition: background-color 0.15s ease 0s;
+}
+
+.termsCheckbox:checked {
+  background-color: rgb(25, 25, 25);
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 1px inset;
+}
+
+.termsCheckbox:checked::before {
+  content: "";
+  color: rgb(255, 255, 255);
+  background: url("https://www.typeform.com/static/signup-page/check-white.svg") 50% 4px no-repeat;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+
 
 .passwordBox {
   position: relative;
@@ -54,6 +101,7 @@
   opacity: 0.175;
   width: 15px;
 }
+
 .passwordIcon svg:hover {
   width: 32px;
   cursor: pointer;

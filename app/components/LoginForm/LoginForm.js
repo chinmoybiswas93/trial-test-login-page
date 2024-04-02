@@ -28,8 +28,8 @@ const LoginForm = () => {
         </button>
       </div>
       <div className={styles.termsCheck}>
-        <input type="checkbox" name="terms" id="terms-check" />
         <label htmlFor="terms-check">
+          <input type="checkbox" name="terms" id="terms-check" className={styles.termsCheckbox} />
           I agree to Typeform&apos;s{" "}
           <a href="/">
             <u>Terms of Service</u>
@@ -45,6 +45,7 @@ const LoginForm = () => {
           .
         </label>
       </div>
+
       <SelectOptions></SelectOptions>
       <div>
         <button className={styles.submitButton} type="submit">
