@@ -7,9 +7,23 @@
   --background: #191919;
 }
 
+@font-face {
+  font-family: 'ApercuPro';
+  src: url('/font/ApercuPro-Light.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'ApercuPro';
+  src: url('/font/ApercuPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
+  font-family: 'ApercuPro', sans-serif;
+  font: 400;
 }
 
 @layer utilities {

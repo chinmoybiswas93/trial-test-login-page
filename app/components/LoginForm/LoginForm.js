@@ -5,6 +5,24 @@ import SelectOptions from "../SelectOptions/SelectOptions";
 
 const LoginForm = () => {
   const [showPass, setShowPass] = useState(false);
+
+  const [defaultCheck, setDefaultCheck] = useState(false);
+
+  const termsSelectChange = () => {
+    const buttons = document.querySelectorAll('[type="radio"]');
+    buttons.forEach(item => {
+      if (item.checked) {
+        setDefaultCheck(true)
+      }
+    })
+    if (!defaultCheck) {
+      buttons[0].checked = true;
+      buttons[2].checked = true;
+      buttons[4].checked = true;
+      setDefaultCheck(true);
+    }
+  }
+
   return (
     <div className={styles.container}>
       <div>
@@ -29,7 +47,7 @@ const LoginForm = () => {
       </div>
       <div className={styles.termsCheck}>
         <label htmlFor="terms-check">
-          <input type="checkbox" name="terms" id="terms-check" className={styles.termsCheckbox} />
+          <input onChange={termsSelectChange} type="checkbox" name="terms" id="terms-check" className={styles.termsCheckbox} />
           I agree to Typeform&apos;s{" "}
           <a href="/">
             <u>Terms of Service</u>
@@ -46,7 +64,7 @@ const LoginForm = () => {
         </label>
       </div>
 
-      <SelectOptions></SelectOptions>
+      <SelectOptions defaultCheck={defaultCheck} setDefaultCheck={setDefaultCheck}></SelectOptions>
       <div>
         <button className={styles.submitButton} type="submit">
           Create my free account

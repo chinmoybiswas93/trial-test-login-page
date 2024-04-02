@@ -21,7 +21,7 @@
   background-color: rgb(25, 25, 25);
 }
 
-.firstColumn > div {
+.firstColumn>div {
   height: 100%;
   display: flex;
   align-items: center;
@@ -30,11 +30,11 @@
   text-align: center;
 }
 
-.firstColumn > div > div {
+.firstColumn>div>div {
   max-width: 366px;
 }
 
-.firstColumn > div > h1 {
+.firstColumn>div>h1 {
   font-size: 36px;
   line-height: 1.2em;
   margin-bottom: 30px;
@@ -55,14 +55,14 @@
   text-align: center;
 }
 
-.secondColumn > div:first-child {
+.secondColumn>div:first-child {
   display: flex;
   align-items: center;
   padding: 16px 23px;
   justify-content: space-between;
 }
 
-.secondColumn > div > div {
+.secondColumn>div>div {
   display: flex;
   align-items: center;
 }
@@ -96,6 +96,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .logo a div {
   display: flex;
   align-items: center;
@@ -105,6 +106,7 @@
 }
 
 .logo h2 {
+  font-family: 'ApercuPro', sans-serif;
   font-weight: 200;
   font-size: 24px;
   line-height: 36px;
@@ -134,6 +136,7 @@
   .firstColumn {
     display: none;
   }
+
   .secondColumn {
     border-radius: 0;
   }

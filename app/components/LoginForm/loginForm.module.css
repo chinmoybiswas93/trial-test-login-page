@@ -15,36 +15,13 @@
   border: 1px solid rgb(194, 194, 193);
   padding: 6px 8px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 3px;
 }
 
 .container>div>input:hover {
   border: 1px solid rgb(127, 127, 127);
 }
-
-/* .container div input[type="checkbox"] {
-  appearance: none;
-  height: 22px;
-  width: 22px;
-  outline: none;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-} */
-
-/* .termsCheck {
-  display: flex !important;
-  flex-direction: row;
-  gap: 15px;
-  font-size: 14px;
-  align-items: flex-start;
-  text-align: left;
-  padding-right: 50px;
-}
-
-.termsCheck input {
-  margin: 3px 0 0 3px;
-} */
 
 .termsCheck label {
   display: block;

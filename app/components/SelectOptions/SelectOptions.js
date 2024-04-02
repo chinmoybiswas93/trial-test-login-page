@@ -2,8 +2,12 @@
 import { useState } from "react";
 import styles from "./selectOptions.module.css";
 
-const SelectOptions = () => {
+const SelectOptions = ({ defaultCheck, setDefaultCheck }) => {
   const [open, setOpen] = useState(false);
+
+  const handleChange = () => {
+    setDefaultCheck(true)
+  }
   return (
     <div className={styles.container}>
       <div className={styles.dropdownBox}>
@@ -18,8 +22,8 @@ const SelectOptions = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.00008 2.94976L8.87876 5.82845C9.65981 6.6095 10.9261 6.60949 11.7072 5.82844L6.00008 0.121338L0.292969 5.82844C1.07402 6.60949 2.34035 6.60949 3.1214 5.82844L6.00008 2.94976Z"
             ></path>
           </svg>
@@ -30,12 +34,12 @@ const SelectOptions = () => {
             <p>Get useful tips, inspiration, and offers via e-communication.</p>
             <div className={styles.optionsContainer}>
               <div className={styles.options}>
-                <input type="radio" name="first-question" id="Yes" />
-                <label htmlFor="Yes">Yes</label>
+                <input onChange={handleChange} type="radio" name="first-question" id="first-yes" />
+                <label htmlFor="first-yes">Yes</label>
               </div>
               <div className={styles.options}>
-                <input type="radio" name="first-question" id="no" />
-                <label htmlFor="no">No</label>
+                <input onChange={handleChange} type="radio" name="first-question" id="first-no" />
+                <label htmlFor="first-no">No</label>
               </div>
             </div>
           </div>
@@ -46,12 +50,12 @@ const SelectOptions = () => {
             </p>
             <div className={styles.optionsContainer}>
               <div className={styles.options}>
-                <input type="radio" name="first-question" id="Yes" />
-                <label htmlFor="Yes">Yes</label>
+                <input onChange={handleChange} type="radio" name="second-question" id="second-yes" />
+                <label htmlFor="second-yes">Yes</label>
               </div>
               <div className={styles.options}>
-                <input type="radio" name="first-question" id="no" />
-                <label htmlFor="no">No</label>
+                <input onChange={handleChange} type="radio" name="second-question" id="second-no" />
+                <label htmlFor="second-no">No</label>
               </div>
             </div>
           </div>
@@ -62,12 +66,12 @@ const SelectOptions = () => {
             </p>
             <div className={styles.optionsContainer}>
               <div className={styles.options}>
-                <input type="radio" name="first-question" id="Yes" />
-                <label htmlFor="Yes">Yes</label>
+                <input onChange={handleChange} type="radio" name="third-question" id="third-yes" />
+                <label htmlFor="third-yes">Yes</label>
               </div>
               <div className={styles.options}>
-                <input type="radio" name="first-question" id="no" />
-                <label htmlFor="no">No</label>
+                <input onChange={handleChange} type="radio" name="third-question" id="third-no" />
+                <label htmlFor="third-no">No</label>
               </div>
             </div>
           </div>
